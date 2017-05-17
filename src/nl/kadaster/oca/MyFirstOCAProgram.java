@@ -5,10 +5,29 @@ import java.util.*;
 public class MyFirstOCAProgram {
 
 	public static void main(String[] args) {
-		System.out.println("Mijn eerste OCA programma");
-		System.out.println("Een toevoeging die ik niet zo heel nuttig vind.");
-	
+		
+		Bos zwarteWoud = new Bos();
+		Bos veluwe = new Bos();
+		zwarteWoud.setAantalBomen (150);
+		veluwe.setAantalBomen (3000);
+		System.out.println(zwarteWoud.getAantalBomen());
+		System.out.println(veluwe.getAantalBomen());
 	
 	}
 
 }
+
+
+class Bos{
+	
+	private int aantalBomen;
+	
+	public void setAantalBomen(int aantalBomen){
+		this.aantalBomen = aantalBomen;
+	} 
+	public int getAantalBomen(){
+		return aantalBomen;
+	}
+}
+
+
